@@ -6,19 +6,8 @@ public class Main {
 
         System.out.println(Arrays.toString(arr));
 
-        // ordenar el arreglo
-        int n = arr.length;
-        for (int i = 0; i < n-1; i++) {
-            for (int j = i+1; j < n; j++) {
-                if (arr[i] > arr [j]) {
-                    int aux = arr[j];
-                    arr[j] = arr[i];
-                    arr[i] = aux;
-                }
-            }
-        }
-
-        // mostrar nuevamente el arreglo ordenado
+        OrdenamientoBurbuja.sort(arr); 
+        // Mostrar nuevamente el arreglo ordenado
         System.out.println(Arrays.toString(arr));
     }
 }
